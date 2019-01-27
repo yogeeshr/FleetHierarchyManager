@@ -1,0 +1,58 @@
+ = = . . . Creating Hierarchy . . .  = =
+
+
+
+
+ = = Print employee hierarchy given id as 6 = =
+
+
+|-	-	FLEET_MANAGER ------------>  Employee : [ id : 6 | Name : Bheem | Salary : 500000 | ReporteesRatingSum 3 | Rating 4 | Type FLEET_MANAGER | Bonus 0 ] | Level : 2 | reports to Pandu Id : 2
+|
+|-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 21 | Name : Ajay | Salary : 250000 | ReporteesRatingSum 0 | Rating 1 | Type DELIVERY_EXECUTIVE | Bonus 0 ] | Level : 3 | reports to Bheem Id : 6
+|
+|-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 22 | Name : Aniket | Salary : 250000 | ReporteesRatingSum 0 | Rating 2 | Type DELIVERY_EXECUTIVE | Bonus 0 ] | Level : 3 | reports to Bheem Id : 6
+|
+
+
+ = = Giving 100000 Bonus to city 1 : Bengaluru = =
+
+
+ = = Print employee hierarchy given id as 1 = =
+
+
+|-	-	CITY_MANAGER ------------>  Employee : [ id : 1 | Name : Ram | Salary : 1000000 | ReporteesRatingSum 9 | Rating 5 | Type CITY_MANAGER | Bonus 100000 ] | Level : 2 | reports to NONE
+|
+|-	-	-	FLEET_MANAGER ------------>  Employee : [ id : 3 | Name : Lav | Salary : 500000 | ReporteesRatingSum 20 | Rating 3 | Type FLEET_MANAGER | Bonus 33333 ] | Level : 3 | reports to Ram Id : 1
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 8 | Name : Krish | Salary : 250000 | ReporteesRatingSum 0 | Rating 1 | Type DELIVERY_EXECUTIVE | Bonus 1666 ] | Level : 4 | reports to Lav Id : 3
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 9 | Name : Manu | Salary : 250000 | ReporteesRatingSum 0 | Rating 2 | Type DELIVERY_EXECUTIVE | Bonus 3333 ] | Level : 4 | reports to Lav Id : 3
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 10 | Name : Rajeev | Salary : 250000 | ReporteesRatingSum 0 | Rating 3 | Type DELIVERY_EXECUTIVE | Bonus 4999 ] | Level : 4 | reports to Lav Id : 3
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 11 | Name : Rajath | Salary : 250000 | ReporteesRatingSum 0 | Rating 4 | Type DELIVERY_EXECUTIVE | Bonus 6666 ] | Level : 4 | reports to Lav Id : 3
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 12 | Name : Sharath | Salary : 250000 | ReporteesRatingSum 0 | Rating 5 | Type DELIVERY_EXECUTIVE | Bonus 8333 ] | Level : 4 | reports to Lav Id : 3
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 13 | Name : Parth | Salary : 250000 | ReporteesRatingSum 0 | Rating 5 | Type DELIVERY_EXECUTIVE | Bonus 8333 ] | Level : 4 | reports to Lav Id : 3
+|
+|-	-	-	FLEET_MANAGER ------------>  Employee : [ id : 4 | Name : Kush | Salary : 500000 | ReporteesRatingSum 8 | Rating 3 | Type FLEET_MANAGER | Bonus 33333 ] | Level : 3 | reports to Ram Id : 1
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 14 | Name : Nikhil | Salary : 250000 | ReporteesRatingSum 0 | Rating 1 | Type DELIVERY_EXECUTIVE | Bonus 4166 ] | Level : 4 | reports to Kush Id : 4
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 15 | Name : Rohit | Salary : 250000 | ReporteesRatingSum 0 | Rating 2 | Type DELIVERY_EXECUTIVE | Bonus 8333 ] | Level : 4 | reports to Kush Id : 4
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 16 | Name : Nitin | Salary : 250000 | ReporteesRatingSum 0 | Rating 5 | Type DELIVERY_EXECUTIVE | Bonus 20833 ] | Level : 4 | reports to Kush Id : 4
+|
+|-	-	-	FLEET_MANAGER ------------>  Employee : [ id : 5 | Name : Raj | Salary : 500000 | ReporteesRatingSum 10 | Rating 3 | Type FLEET_MANAGER | Bonus 33333 ] | Level : 3 | reports to Ram Id : 1
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 17 | Name : Mayank | Salary : 250000 | ReporteesRatingSum 0 | Rating 1 | Type DELIVERY_EXECUTIVE | Bonus 3333 ] | Level : 4 | reports to Raj Id : 5
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 18 | Name : Aditya | Salary : 250000 | ReporteesRatingSum 0 | Rating 2 | Type DELIVERY_EXECUTIVE | Bonus 6666 ] | Level : 4 | reports to Raj Id : 5
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 19 | Name : Yash | Salary : 250000 | ReporteesRatingSum 0 | Rating 3 | Type DELIVERY_EXECUTIVE | Bonus 9999 ] | Level : 4 | reports to Raj Id : 5
+|
+|-	-	-	-	DELIVERY_EXECUTIVE ------------>  Employee : [ id : 20 | Name : Vimal | Salary : 250000 | ReporteesRatingSum 0 | Rating 4 | Type DELIVERY_EXECUTIVE | Bonus 13333 ] | Level : 4 | reports to Raj Id : 5
+|
+
+Process finished with exit code 0
