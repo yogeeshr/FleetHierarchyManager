@@ -250,7 +250,7 @@ public class Util {
         fleetManagementData.getIdToEmployeeMapping().put(temp.getId(), temp);
         employees.add(temp);
 
-        deEmployee = new Employee(21, 1, "Ajay", BigInteger.valueOf(250000), BigInteger.valueOf(0),
+        deEmployee = new Employee(21, 1, "Arun", BigInteger.valueOf(250000), BigInteger.valueOf(0),
                 0, new ArrayList<Employee>(), employee, EmployeeTypeEnum.DELIVERY_EXECUTIVE);
         fleetManagementData.getIdToEmployeeMapping().put(deEmployee.getId(), deEmployee);
         deEmployees.add(deEmployee);
@@ -275,7 +275,7 @@ public class Util {
         fleetManagementData.getIdToEmployeeMapping().put(deEmployee.getId(), deEmployee);
         deEmployees.add(deEmployee);
 
-        deEmployee = new Employee(24, 2, "Aniket", BigInteger.valueOf(250000), BigInteger.valueOf(0),
+        deEmployee = new Employee(24, 2, "Ramesh", BigInteger.valueOf(250000), BigInteger.valueOf(0),
                 0, new ArrayList<Employee>(), employee, EmployeeTypeEnum.DELIVERY_EXECUTIVE);
         fleetManagementData.getIdToEmployeeMapping().put(deEmployee.getId(), deEmployee);
         deEmployees.add(deEmployee);

@@ -1,9 +1,9 @@
 package com.fleethierarchymanager;
 
-import com.fleethierarchymanager.entitites.City;
 import com.fleethierarchymanager.entitites.Employee;
 
 import java.math.BigInteger;
+import java.util.PriorityQueue;
 
 public interface FleetHierarchyManger {
 
@@ -19,12 +19,13 @@ public interface FleetHierarchyManger {
      * @param bonusValue
      * @param ratingSum
      */
-    public void shareBonus(Employee employee, BigInteger bonusValue, int ratingSum);
+    public void shareBonus(Employee employee, BigInteger bonusValue, int ratingSum,
+                           PriorityQueue<Employee> employeeQueue);
 
 
     /**
      * Method to fetch top N Delivery executives
      */
-    public void fetchTopDeliveryExecutives(int N);
+    public void fetchTopDeliveryExecutives(PriorityQueue<Employee> priorityQueue, int N);
 
 }

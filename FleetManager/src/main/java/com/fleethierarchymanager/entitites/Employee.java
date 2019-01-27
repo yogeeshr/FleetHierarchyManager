@@ -1,7 +1,10 @@
 package com.fleethierarchymanager.entitites;
 
 import com.fleethierarchymanager.EmployeeTypeEnum;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -14,7 +17,7 @@ import java.util.ArrayList;
  * Employee entity keeping track of all data of an employee
  * @author : yogeesh.srkvs@gmail.com
  */
-public class Employee {
+public class Employee implements Comparable {
 
     /**
      * Unique if of employee
@@ -64,9 +67,25 @@ public class Employee {
     @Override
     public String toString() {
 
-        return " Employee : [ id : " +id + " | Name : " + name + " | Salary : " + salary + " | ReporteesRatingSum " +
-                reporteesRatingSum + " | Rating " + rating + " | Type " + employeeType + " | Bonus " + bonus +
+        return " Employee : [ id : " +id + " | Name : " + name + " | Salary : " + salary + " | ReporteesRatingSum : " +
+                reporteesRatingSum + " | Rating : " + rating + " | Type : " + employeeType + " | Bonus : " + bonus +
                 " ]";
 
+    }
+
+    /**
+     * Implementing interface of Comparable
+     * @param o
+     * @return
+     */
+    public int compareTo(Object o) {
+        float ratio1 = (this.getBonus().floatValue())/(this.getSalary().floatValue());
+        float ratio2 = ((Employee)o).getBonus().floatValue()/((Employee)o).getSalary().floatValue();
+
+        if (ratio1>ratio2) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }
