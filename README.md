@@ -12,10 +12,13 @@ Fun project to learn OOPs concepts
 * Initially bonus for all employee will be zero until allocated 
 * Level 1 is highest and greater the level lower the hierarchy
 * Data is hardcoded and static data is created using Util class
+* All data is in code itself and no DB is being used
 
 ## Note
 * Priority queue has been used to keep track of all DE's with (bonus/salary) so that top N can be got
 * Interface is used in order to implement 3 functionalities ( printHerarchy, top 5 DE's and Give Bonus as per rating ratio )
+* CompareTo has been overriden in order to make priorityQueue as max heap which is required getting top N DE's : https://github.com/yogeeshr/FleetHierarchyManager/blob/master/FleetManager/src/main/java/com/fleethierarchymanager/entitites/Employee.java#L81
+* Main data started is maintained in Entity : https://github.com/yogeeshr/FleetHierarchyManager/blob/master/FleetManager/src/main/java/com/fleethierarchymanager/entitites/FleetManagementData.java
 
 ## Extendability 
 * Code is extensible if we need to pull more than 5 top DE;s as well
