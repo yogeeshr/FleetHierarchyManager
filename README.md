@@ -31,6 +31,7 @@ Fun project to learn OOPs concepts
 * Code has been done starting from ERD and converting into Java classes
 * Followed SOLID principle throught
 * Code is thread safe at some method where required, same is achieved by usind Synchronized keyword of Java
+* Lombok is used to generate getter, setter and constructors
 
 ## Artifacts 
 * Sequence Diagram : https://github.com/yogeeshr/FleetHierarchyManager/blob/master/FleetManager/Diagrams/Sequence_Diagram.png
