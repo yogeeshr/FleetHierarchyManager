@@ -44,5 +44,5 @@ Fun project to learn OOPs concepts
 * Table 1 : Employee with attributes mentioned in Class would be a table barring reportees attrbiute
 * Table 2 : Mapping table of empid, mgrid
 * Table 3 : City as a table
-* Table 4 : CIty_Mgr mapping to know which city is managed by which manager
+* Table 4 : City_Mgr mapping to know which city is managed by which manager
 * Table 5 : BonusGrant_CityID ( slno, bonus_amount, city_id, timestamp ) to keep track of which city was given what bonus and when 
