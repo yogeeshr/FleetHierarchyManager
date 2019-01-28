@@ -20,7 +20,6 @@ Fun project to learn OOPs concepts
 * Interface is used in order to implement 3 functionalities ( printHerarchy, top 5 DE's and Give Bonus as per rating ratio )
 * CompareTo has been overriden in order to make priorityQueue as max heap which is required getting top N DE's : https://github.com/yogeeshr/FleetHierarchyManager/blob/master/FleetManager/src/main/java/com/fleethierarchymanager/entitites/Employee.java#L81
 * Main data started is maintained in Entity : https://github.com/yogeeshr/FleetHierarchyManager/blob/master/FleetManager/src/main/java/com/fleethierarchymanager/entitites/FleetManagementData.java
-* 
 
 ## Extendability 
 * Code is extensible if we need to pull more than 5 top DE;s as well
@@ -38,7 +37,6 @@ Fun project to learn OOPs concepts
 
 ## Artifacts 
 * Sequence Diagram : https://github.com/yogeeshr/FleetHierarchyManager/blob/master/FleetManager/Diagrams/Sequence_Diagram.png
-* ERD : <github_link>
 * Sample code run and it's output : https://github.com/yogeeshr/FleetHierarchyManager/blob/master/FleetManager/Output/Hierarchy_Output.txt
 
 ## Database ( if wanted )
