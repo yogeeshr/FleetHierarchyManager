@@ -25,6 +25,7 @@ Fun project to learn OOPs concepts
 ## Extendability 
 * Code is extensible if we need to pull more than 5 top DE;s as well
 * New type of employee can easily be added by adding a type to enum
+* Later if there is an entity called vehicle belongs to Delivery Executive - this can be added as composition to Employee class
 
 ## Code standars
 * No line is greater than 120 column long
@@ -44,5 +45,6 @@ Fun project to learn OOPs concepts
 * Table 1 : Employee with attributes mentioned in Class would be a table barring reportees attrbiute
 * Table 2 : Mapping table of empid, mgrid
 * Table 3 : City as a table
-* Table 4 : City_Mgr mapping to know which city is managed by which manager
+* Table 4 : CIty_Mgr mapping to know which city is managed by which manager
 * Table 5 : BonusGrant_CityID ( slno, bonus_amount, city_id, timestamp ) to keep track of which city was given what bonus and when 
+
